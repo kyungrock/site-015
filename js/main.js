@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".fb-nav-toggle");
   const nav = document.querySelector(".fb-header-nav");
   if (toggle && nav) {
