@@ -1,6 +1,6 @@
-﻿/** Deno Deploy 배포 URL (로컬·다른 호스트는 자동 보정) */
+/** Deno Deploy 배포 URL (로컬·다른 호스트는 자동 보정) */
 window.SITE_CONFIG = {
-  baseUrl: "https://site-015-ka9ctrdq9qrd.kyungrock.deno.net",
+  baseUrl: "https://site-015.kyungrock.deno.net",
   siteName: "기프트카드",
   slug: "site-015",
   defaultDescription:

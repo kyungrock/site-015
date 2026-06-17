@@ -1,4 +1,4 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
-Sitemap: https://site-015-ka9ctrdq9qrd.kyungrock.deno.net/sitemap.xml
+Sitemap: https://site-015.kyungrock.deno.net/sitemap.xml
