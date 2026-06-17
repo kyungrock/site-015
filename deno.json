@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch main.ts",
+    "start": "deno run -A main.ts"
+  },
+  "deploy": {
+    "project": "site-015",
+    "entrypoint": "main.ts"
+  }
+}
