@@ -1,0 +1,11 @@
+{
+  "name": "site-015-gift-card",
+  "version": "1.0.0",
+  "private": true,
+  "description": "마사지 기프트카드 선물 정보 허브 — 선물라이프형 웰니스 블로그",
+  "scripts": {
+    "start": "deno task start",
+    "blog:publish": "python scripts/publish_blog.py",
+    "blog:add": "python scripts/publish_blog.py --add blog-draft.json"
+  }
+}

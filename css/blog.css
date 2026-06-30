@@ -1,0 +1,245 @@
+/* 블로그 글쓰기·태그 (style.css 보완) */
+
+.blog-write-link {
+  margin-top: 0.75rem;
+}
+
+.btn-blog-write {
+  display: inline-block;
+  padding: 10px 18px;
+  background: var(--fb-blue);
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-blog-write:hover {
+  background: var(--fb-blue-dark);
+}
+
+.post-empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--fb-gray);
+  background: var(--fb-white);
+  border-radius: var(--radius);
+  box-shadow: var(--fb-shadow);
+}
+
+.blog-tags-bottom {
+  margin: 16px 0;
+}
+
+/* ── 글쓰기 페이지 ── */
+.blog-write-page {
+  max-width: var(--feed-width);
+  margin: 0 auto;
+  padding: 16px 16px 48px;
+}
+
+.blog-write-page h1 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+}
+
+.blog-write-page .muted {
+  color: var(--fb-gray);
+  font-size: 0.9rem;
+}
+
+.blog-write-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.blog-form.card,
+.blog-preview.card {
+  background: var(--fb-white);
+  border-radius: var(--radius);
+  box-shadow: var(--fb-shadow);
+  padding: 20px;
+}
+
+.blog-form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.blog-form label:first-of-type {
+  margin-top: 0;
+}
+
+.blog-form input[type="text"],
+.blog-form input[type="date"],
+.blog-form input[type="url"],
+.blog-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--fb-light);
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.blog-form textarea {
+  min-height: 280px;
+  resize: vertical;
+  font-family: Consolas, "Malgun Gothic", monospace;
+  line-height: 1.5;
+}
+
+.blog-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.blog-toolbar button {
+  padding: 6px 12px;
+  border: 1px solid var(--fb-light);
+  border-radius: var(--radius);
+  background: var(--fb-bg);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.blog-toolbar button:hover {
+  border-color: var(--fb-blue);
+  color: var(--fb-blue);
+}
+
+.blog-link-box {
+  margin-bottom: 8px;
+  padding: 12px;
+  background: var(--fb-bg);
+  border: 1px solid var(--fb-light);
+  border-radius: var(--radius);
+}
+
+.blog-link-box label {
+  margin-top: 8px !important;
+  font-weight: 500 !important;
+}
+
+.blog-link-check {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400 !important;
+}
+
+.blog-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.blog-btn-primary,
+.blog-btn-secondary,
+.blog-btn-outline {
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.blog-btn-primary {
+  background: var(--fb-blue);
+  color: #fff;
+}
+
+.blog-btn-secondary {
+  background: #e7f3ff;
+  color: var(--fb-blue);
+  border-color: var(--fb-blue);
+}
+
+.blog-btn-outline {
+  background: var(--fb-white);
+  border-color: var(--fb-light);
+}
+
+.blog-status {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  display: none;
+}
+
+.blog-status.show {
+  display: block;
+}
+
+.blog-status.ok {
+  color: var(--fb-blue);
+}
+
+.blog-status.err {
+  color: #c0392b;
+}
+
+.blog-preview h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.blog-preview .muted {
+  color: var(--fb-gray);
+}
+
+.blog-help {
+  margin-top: 24px;
+  background: var(--fb-white);
+  border-radius: var(--radius);
+  box-shadow: var(--fb-shadow);
+  padding: 20px;
+}
+
+.blog-help h3 {
+  margin: 0 0 12px;
+}
+
+.blog-help pre {
+  overflow: auto;
+  background: var(--fb-bg);
+  padding: 12px;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+}
+
+.blog-help code {
+  font-size: 0.85em;
+}
+
+.article-content .tip-box {
+  background: #e7f3ff;
+  border-left: 4px solid var(--fb-blue);
+  padding: 16px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 16px 0;
+}
+
+.article-content .warn-box {
+  background: #fff3cd;
+  border-left: 4px solid #f7b928;
+  padding: 16px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 16px 0;
+}
+
+@media (max-width: 860px) {
+  .blog-write-layout {
+    grid-template-columns: 1fr;
+  }
+}
