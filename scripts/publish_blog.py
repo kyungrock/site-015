@@ -118,8 +118,9 @@ def main() -> None:
             print("  (등록된 블로그 JSON 글 없음 - HOME_STATIC 정적 글은 홈에 유지됩니다)")
         for p in posts:
             status = "공개" if p.get("published", True) else "비공개"
+            title_safe = (p.get("title") or "").replace("\u2014", "-")
             print(
-                f"  [{status}] {p.get('date', '')}  {p.get('id')}  {p.get('title')}"
+                f"  [{status}] {p.get('date', '')}  {p.get('id')}  {title_safe}"
             )
         if not args.add and not args.import_legacy:
             return
